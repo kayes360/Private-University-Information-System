@@ -27,6 +27,7 @@
 <body>
 	
 <div class="container"> 
+<div class="cont "> 
 	<div class="main-body ">
 		<a class="float-right" href="Logout.php">Logout</a>		
 		<h1>Welcome <?php echo  $fields['Name'] ; ?> </h1>
@@ -35,6 +36,7 @@
 		<a href="location.php">Location</a>
 	 </button>
 
+</div>
 </div>
 
 </body>
