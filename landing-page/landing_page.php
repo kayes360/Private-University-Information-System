@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Private Universitiy Finder</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap_landing_page.min.css" media="all" />
+	 <link rel="stylesheet" type="text/css" href="bootstrap_landing_page.min.css" media="all" />  
 	<link rel="shortcut icon" type="image/png" href="../media\favicon.png"/>
 	<script src="https://kit.fontawesome.com/6dc803f8de.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="../fontawesome-free-5.2.0-web/css/all.min.css" media="all" />
@@ -14,11 +14,14 @@
 	<script type="text/javascript" src="jquery.waypoints.min.js"> </script>
 	<script type="text/javascript" src="jquery.waypoints.min.js"> </script>
 	<script type="text/javascript" src="jquery.counterup.min.js"> </script>
+    <link rel="stylesheet" href="../toheader/header.css">
 
 </head>
 <body>
+	
+<?php include('../toheader/toheader.php') ?>
 	<div class="full-body">
-		<header>
+		<!-- <header>
 		<div class="logo_Name">
 			<a href="#">
 			<img src="../media/logo_img2.png" alt="" id="logo_img"/>
@@ -33,7 +36,8 @@
 				<li><a href="../about/about.php"title="Why Us ?">Why Us ?</a></li>
 			</ul>
 		</div>
-	</header>
+	</header>  -->
+	 
 
 	<section class="sec_1">
 		<div class="main_bg">
