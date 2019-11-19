@@ -14,11 +14,11 @@ body{
 		height: 500px; 
 		overflow: hidden;
 	}
-	.container::after {
+	/* .container::after {
 		content: "";
 		clear: both;
 		display: table;
-	  } 
+	  }  */
 	.row{
 		margin-top: 5%;
 	}
@@ -41,7 +41,7 @@ body{
 	}
 	.our-team .pic:before{
 		content: "";
-		width:100%;
+		width: 220px;
 		background: #4cb1ff;
 		position:absolute;
 		bottom:135%;

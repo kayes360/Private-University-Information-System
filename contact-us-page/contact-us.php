@@ -8,9 +8,13 @@
 	<script src="https://kit.fontawesome.com/6dc803f8de.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" media="all" />
 	<link rel="shortcut icon" type="image/png" href="../media\favicon.png"/>
-	<link rel="stylesheet" href="../toheader/header.css">
+
 	<link rel="stylesheet" href="contact_us.css"> 
-    <link rel="stylesheet" href="../tofooter/footer.css">
+	
+		<!-- Link for Header CSS -->
+		<link rel="stylesheet" type="text/css" href="/project/toheader/header.css" media="all" />  
+	<!-- Link for Footer CSS -->
+	<link rel="stylesheet" type="text/css" href="/project/tofooter/footer.css" media="all" /> 
 
 </head>
 
@@ -21,7 +25,7 @@
 		<div class="row align-items-center" id="profile_card">
 			<div class="col   "> 
 				<div class="our-team">
-					<div class="pic">
+					<div class="pic"> 
 						<img src="media/kayes.jpg" alt="" />
 					</div>
 					<div class="team-content">
@@ -38,9 +42,9 @@
 						</ul>
 			 </div>
 			</div> 
-			<div class="col  "> 
+			<div class="col"> 
 				<div class="our-team">
-					<div class="pic">
+				<div class="pic">
 						<img src="media/shibly.jpg" alt="" />
 					</div>
 					<div class="team-content">

@@ -8,10 +8,10 @@
     <title>Document</title>
 
     <!-- <link rel="stylesheet" type="text/css" href="../landing-page/bootstrap_landing_page.min.css" media="all" /> -->
-    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.css" media="all" />
     <link rel="shortcut icon" type="image/png" href="../media\favicon.png" />
     <script src="https://kit.fontawesome.com/6dc803f8de.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="footer.css"> 
+    <link rel="stylesheet" href="tofooter.css"> 
 
 </head>
 

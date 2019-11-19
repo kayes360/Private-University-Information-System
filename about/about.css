@@ -1,0 +1,15 @@
+ 
+section{ 
+	height:500px;
+	background:grey;
+	overflow:hidden;
+	}
+section .description{
+	
+	margin: 100px 100px 100px 100px;
+	padding: 100px 100px 100px 100px;
+	font-size:30px;
+	color:white;
+	
+	}
+ 

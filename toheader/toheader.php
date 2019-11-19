@@ -6,7 +6,7 @@
 		<title></title>
 	</head>
 		<!-- <link rel="stylesheet" type="text/css" href="bootstrap_landing_page.min.css" media="all" /> -->
-	<link rel="stylesheet" type="text/css" href="/project/toheader/header.css" media="all" />  
+	<link rel="stylesheet" type="text/css" href="/project/toheader/toheader.css" media="all" />  
  
 	<body>
 	<header>

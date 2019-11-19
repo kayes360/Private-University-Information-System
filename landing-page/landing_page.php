@@ -4,41 +4,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Private Universitiy Finder</title>
-	 <link rel="stylesheet" type="text/css" href="bootstrap_landing_page.min.css" media="all" />  
+	 <link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.min.css" media="all" />  
+	 <link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.css" media="all" /> 
+    
+
 	<link rel="shortcut icon" type="image/png" href="../media\favicon.png"/>
-	<script src="https://kit.fontawesome.com/6dc803f8de.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="../fontawesome-free-5.2.0-web/css/all.min.css" media="all" />
+	
 	<link rel="stylesheet" type="text/css" href="icons.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="iconsbd.css" media="all" />
-	<script type="text/javascript" src="jquery-2.2.4.min.js"> </script>
-	<script type="text/javascript" src="jquery.waypoints.min.js"> </script>
-	<script type="text/javascript" src="jquery.waypoints.min.js"> </script>
-	<script type="text/javascript" src="jquery.counterup.min.js"> </script>
-    <link rel="stylesheet" href="../toheader/header.css">
+
+	<script src="https://kit.fontawesome.com/6dc803f8de.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="jquery/jquery-2.2.4.min.js"> </script>
+	<script type="text/javascript" src="jquery/jquery.waypoints.min.js"> </script>
+	<script type="text/javascript" src="jquery/jquery.waypoints.min.js"> </script>
+	<script type="text/javascript" src="jquery/jquery.counterup.min.js"> </script>
+
+	<link rel="stylesheet" type="text/css" href="landing_page.css" media="all" />  
+    <!-- Link for Header CSS -->
+	<link rel="stylesheet" type="text/css" href="/project/toheader/toheader.css" media="all" />  
+	<!-- Link for Footer CSS -->
+	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" /> 
 
 </head>
 <body>
 	
 <?php include('../toheader/toheader.php') ?>
-	<div class="full-body">
-		<!-- <header>
-		<div class="logo_Name">
-			<a href="#">
-			<img src="../media/logo_img2.png" alt="" id="logo_img"/>
-
-			</a>
-		</div>
-		<div class="nav_bar">
-			<ul>
-				<li><a href="../landing-page/landing_page.php" title="Home">Home</a></li>
-				<li><a href="#social-media" title="Social Media"> Social Media</a></li>
-				<li><a href="../contact-us-page/contact-us.php"title="Contact Us">Contact Us</a></li>
-				<li><a href="../about/about.php"title="Why Us ?">Why Us ?</a></li>
-			</ul>
-		</div>
-	</header>  -->
-	 
-
+	<div class="full-body"> 
 	<section class="sec_1">
 		<div class="main_bg">
 			<form method="POST" action="">
@@ -123,7 +115,8 @@
 					</div>
 					<div class="col-md-4">
 						<div class="stat-items">
-						<span class="icon-bangladesh"></span>
+						<!-- <span class="icon-bangladesh"></span> -->
+						<i class="fas fa-globe-asia"></i>
 								<h2 id="bd">
 								  	<span class=" text-center" style="font-size:35px">
 									 All Over <br />Bangladesh
@@ -139,56 +132,8 @@
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="footer">
-
-			<div class="row">
-			<div class="col-md-4" >
-				<p> <h2> Join Us With</h2></p>
-			</div>
-			<ul id="social-media">
-				<div class="col-md-3" id="facebook">
-				<li>
-					<a href="https://www.facebook.com">
-						<i class="fab fa-facebook-f"> </i> <br />
-						<span class="menu-text">Facebook</span>
-					</a>
-				</li>
-				</div>
-				<div class="col-md-3" id="twitter">
-				<li>
-					<a href="https://www.twitter.com">
-						<i class="fab fa-twitter"> </i><br />
-						<span class="menu-text">Twitter</span>
-					</a>
-				</li>
-				</div>
-				<div class="col-md-3" id="googles">
-				<li>
-					<a href="https://www.plus.google.com">
-						<i class="fab fa-google-plus-g"> </i><br />
-						<span class="menu-text">Google+</span>
-					</a>
-				</li>
-				</div>
-				<div class="col-md-3" id="linkdin">
-				<li>
-					<a href="https://www.linkedin.com/">
-						<i class="fab fa-linkedin-in"> </i><br />
-						<span class="menu-text">LinkdIn</span>
-					</a>
-				</li>
-				</div>
-			</ul>
-		</div>
-		<p class="btm-cprt">
-
-			<i class="far fa-copyright"></i> 2019 Copyright: Group 3 From CSE 482.L
-
-		</p>
-		</div>
-
-	</footer>
+	 
+	<?php include('../tofooter/tofooter.php')?>
 
 	<!-- <p class="backtotop">  -->
 		<!-- <a id="back-to-top" class="hide" onclick="topFunction()" id="myBtn" title="Go to top"> -->
