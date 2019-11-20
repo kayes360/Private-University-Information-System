@@ -12,9 +12,9 @@
 	<link rel="stylesheet" href="contact_us.css"> 
 	
 		<!-- Link for Header CSS -->
-		<link rel="stylesheet" type="text/css" href="/project/toheader/header.css" media="all" />  
+		<link rel="stylesheet" type="text/css" href="/project/toheader/toheader.css" media="all" />  
 	<!-- Link for Footer CSS -->
-	<link rel="stylesheet" type="text/css" href="/project/tofooter/footer.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" /> 
 
 </head>
 
