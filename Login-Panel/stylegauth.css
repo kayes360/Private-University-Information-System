@@ -1,0 +1,55 @@
+body{
+	background:#34495E   ;
+	background-size:cover;
+	background-position:center;
+}
+.login-box{
+	max-width:700px;
+	float:none;
+	margin:150px auto;
+}
+.login-left{
+	background-color: rgba(211,211,211,0.5);
+	padding:30px;
+}
+.registration-right{
+	background-color: #fff;
+	padding:30px;	
+}
+.form-color{
+	background-color: #8cb8ff !important;
+}
+.login-left{
+	background-color: #3498DB   !important;
+}
+.registration-right{
+	background-color: #5DADE2 !important;
+}
+.btn-primary {	
+  background-color: #2E4053;
+}
+.login-box{
+	margin-top:50px !important;
+}
+a{
+	color:#fff !important;
+}
+h1{
+	color: #fff !important;
+	text-align:center;
+	text-transform: uppercase;
+}
+h2{
+	color:#fff;
+}
+/*
+style for google-auth
+*/
+.auth-container{
+	margin-top:
+}	
+.user{
+	margin-bottom:10% !important;
+	margin-top:1% !important;
+	
+} 

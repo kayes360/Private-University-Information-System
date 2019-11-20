@@ -1,0 +1,234 @@
+/* Section 1 Starts*/
+section.sec_1 .row{
+	margin: 150px 0px 0px 70px;
+}
+.main_bg{
+	 /* The image used */
+     /* background-image: url('media/main_img.jpg'); */
+     background-image: url('media/1.jpeg');
+
+    /* Set a specific height */
+    min-height: 570px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	overflow:hidden;
+}
+
+.row input[type=submit]{
+	    /* font-family: inherit; */
+	padding: 5px 11px 10px 10px;
+	background:linear-gradient(50deg,#303f9f,#45cafc);
+	color:white;
+	font-size:20px;
+	line-height:5px;
+	/* font-weight:400; */
+    border: 2px solid #88e8ab;
+    border-radius: 28px;
+    width: 250px;
+	height: 40px;
+	font-family: 'Kanit', sans-serif;
+}
+.row input[type=submit]:hover{
+	cursor: pointer;
+	background:linear-gradient(50deg,#45cafc,#303f9f);
+	color:white;
+	transition-duration: 1s;
+
+
+}
+select.form-control{
+	font-family:Roboto, sans-serif;
+	box-shadow:0 5px 25px rgba(0,0,0,.5);
+	height:100px;
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out; box-shadow: .15s ease-in-out;
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+    .form-control {
+        transition: none
+    }
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control::-moz-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control:-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control::-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + 2px)
+}
+
+select.form-control:focus::-ms-value {
+    color: #495057;
+    background-color: #fff
+}
+
+.form-control-file,
+.form-control-range {
+    display: block;
+    width: 100%
+}
+
+/* Section 1 Ends*/
+
+/* Section 2 Starts*/
+
+section .container .row{
+
+   margin:0px 0px 0px 70px;
+
+}
+ .sec_2{
+
+	background:#121212 ;
+	padding-top:80px;
+	padding-bottom:80px;
+	color:white;
+	background-attachment:fixed;
+	height:300px;
+    }
+
+.stat-items i{
+	font-size:50px;
+
+}
+.stat-items h2{
+	font-weight:bold;
+	font-size:42px;
+	color:darkorange;
+}
+.stat-items p{
+	font-weight:bold;
+	letter-spacing:1px;
+	font-size:25px;
+}
+.col-md-4#subjects{
+	margin:5px 0px 0px 0px;
+
+}
+i#subjects{
+   font-size: 40px;
+}
+h2#subjects1{
+    margin:20px;
+}
+p#subjects{
+    margin:25px;
+}
+.stat-items span
+{
+	margin:10px 0px 0px 0px;
+}
+.stat-items h2#uni
+{
+	margin:17px 0px 0px 0px;
+
+
+}
+.stat-items h2#bd
+{
+	margin:-10px 0px 0px 0px;
+
+
+}
+.col-md-4 h2#subjects{
+	margin:0px 0px 0px 0px;
+
+}
+/* Section 2 Ends*/
+
+/*----------------
+scroll to top button
+------------------*/
+
+p .backtotop{
+	height:50px;
+	width:50px;
+  border-radius: 20px;
+}
+.back-to-top{
+color: #fff;
+background-color: #2196F3;
+border: 2px solid blue;
+border-radius: 50%;
+text-align: center;
+width: 50px;
+height: 50px;
+position: fixed;
+bottom: 50px;
+right:50px;
+cursor: pointer;
+transition:all .5s ease;
+}
+.back-to-top i{
+font-size: 40px;
+bottom: 50px;
+right:50px;
+
+}
+.back-to-top:hover{
+	transform:scale(1.5,1.5);
+	transition:all .5s ease;
+	cursor: pointer;
+
+}
+.hide{
+	transform:scale(0,0);
+}

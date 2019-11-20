@@ -1,0 +1,63 @@
+body{
+	background:#959ba0 !important ;
+	background-size:cover;
+	background-position:center;
+}
+.login-box{
+	max-width:700px;
+	float:none;
+	margin:150px auto;
+}
+.login-left{
+	background-color: white;
+	padding:30px;
+}
+.registration-right{
+	background-color: #fff;
+	padding:30px;	
+}
+.form-color{
+	background-color: #8cb8ff !important;
+}
+.login-left{
+	background-color: #3498DB   !important
+}
+.registration-right{
+	background-color: #5DADE2 !important;
+}
+.btn-primary {	
+  background-color: #2E4053;
+}
+.login-box{
+	margin-top:50px !important;
+}
+a{
+	color:#fff !important;
+}
+h1{
+	color: #fff !important;
+	margin-top:20px !important;
+	text-align:center;
+	text-transform: uppercase;
+	margin-right:20%;
+}
+/*
+style for google-auth
+*/
+.auth-container{
+	margin-top:
+}	
+.user{
+	margin-bottom:10% !important;
+	margin-top:1% !important;
+	
+}
+/*
+style for home.php
+*/
+.container .main-body{
+	color: black;
+}
+.side-menu{
+
+}
