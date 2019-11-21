@@ -12,14 +12,14 @@
 	<link rel="shortcut icon" type="image/png" href="../media\favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="../fontawesome-free-5.2.0-web/css/all.min.css" media="all" />
 	
-	<link rel="stylesheet" type="text/css" href="icons.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="iconsbd.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="bdIcon.css" media="all" /> 
 
 	<script src="https://kit.fontawesome.com/6dc803f8de.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="jquery/jquery-2.2.4.min.js"> </script>
 	<script type="text/javascript" src="jquery/jquery.waypoints.min.js"> </script>
 	<script type="text/javascript" src="jquery/jquery.waypoints.min.js"> </script>
 	<script type="text/javascript" src="jquery/jquery.counterup.min.js"> </script>
+
 
 	<link rel="stylesheet" type="text/css" href="landing_page.css" media="all" />  
     <!-- Link for Header CSS -->
@@ -116,8 +116,8 @@
 					</div>
 					<div class="col-md-4">
 						<div class="stat-items">
-						<!-- <span class="icon-bangladesh"></span> -->
-						<i class="fas fa-globe-asia"></i>
+						<span class="icon-bangladesh"></span> 
+						<!-- <i class="fas fa-globe-asia"></i> -->
 								<h2 id="bd">
 								  	<span class=" text-center" style="font-size:35px">
 									 All Over <br />Bangladesh
