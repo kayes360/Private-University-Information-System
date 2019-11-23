@@ -1,0 +1,96 @@
+/*--------------------
+Header style starts
+----------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+	margin:0px;
+	padding:0px;
+}
+
+a#logo_img{
+	text-decoration:none;
+	background-image: url("");
+}
+a{
+	text-decoration:none; 
+}
+header .head-container{
+	height: 135px;
+	background:  linear-gradient(33deg, #ff93eb 14%, #5961f9 52%); 
+	font-family:Poppins ;
+	/* overflow: hidden; */
+}
+.navbar{
+	box-shadow: none;
+}
+.head-container{
+	display: flex;
+	flex-wrap: nowrap;
+	/* position: absolute; */
+}
+.logo-area{
+	width: 20%;
+}
+#logo_img{ 
+    width: 50%; 
+    margin: 5px 0px 0px 37px;
+    display:block;
+}
+.nav_bar{
+	width:70%;
+	height: 5%; 
+	font-size:18px;
+	color:white;
+	font-weight:Bold;
+	font-family:"Poppins";  
+	top: 5px;
+	position:relative;
+} 
+.nav_bar >ul > li{
+	display:inline-block;
+	padding: 0px 5px 0px 0px;
+
+}
+.nav_bar >ul > li >a{
+	color: #000;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:25px
+
+}
+.nav_bar >ul > li >a:hover{
+	color: #ffffff;
+}
+
+.login-profile{
+	width: 30%;  
+}
+.login-profile .profile-content{ 
+	top: 50px;
+	position: relative;
+	margin-left: 50%;
+    /* left: 20%; */
+    /* right: 20%;  */
+}
+.login-profile li>a{
+	/* color:white;  */
+	font-size: 30px;
+	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Orbitron', sans-serif;
+}
+.login-profile>ul{     
+	position: absolute;
+    left: 100%;
+    bottom: 30%;
+}
+.login-profile .dropdown-menu a{
+	font-size: 30px;
+	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Orbitron', sans-serif;
+}
+.login-profile .dropdown-menu  {
+	overflow: hidden;
+}
+
+/*-------------------
+Header style ends
+--------------------*/
