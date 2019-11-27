@@ -23,14 +23,14 @@
 
 	<link rel="stylesheet" type="text/css" href="landing_page.css" media="all" />  
     <!-- Link for Header CSS -->
-	<link rel="stylesheet" type="text/css" href="/project/toheader/toheader.css" media="all" />  
+	 <link rel="stylesheet" type="text/css" href="/project/toheader/toheader.css" media="all" />  
 	<!-- Link for Footer CSS -->
 	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" /> 
 
 </head>
 <body>
 	
-<?php include('../toheader/toheader.php') ?>
+ <?php include('../toheader/toheader.php') ?>  
 	<div class="full-body"> 
 	<section class="sec_1">
 		<div class="main_bg">
