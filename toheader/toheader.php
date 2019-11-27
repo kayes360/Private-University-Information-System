@@ -13,7 +13,7 @@
 	  <script src="https://kit.fontawesome.com/3662edb615.js" crossorigin="anonymous"></script>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-	  <link rel="stylesheet" type="text/css" href="modal-style.css" media="all" />
+	  <link rel="stylesheet" type="text/css" href="/project/toheader/modal-style.css" media="all" />
    <!--FOR modal -->
 	</head>
 		
@@ -55,6 +55,6 @@
 
 		
 	</body>
-	<script type="text/javascript" src="modal-script.js"> </script>
+	<script type="text/javascript" src="/project/toheader/modal-script.js"> </script>
 	</html>
 	 

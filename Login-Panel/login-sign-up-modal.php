@@ -3,10 +3,7 @@
 <!-- Modal -->
  
         <i class="fas fa-times-circle close" id="cross-btn" data-dismiss="modal" aria-label="Close"></i></span></button>
-        <!-- &times; -->
-       <!-- <div class="modal-header">   
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times-circle"></i></span></button>
-     </div> -->
+      
       <div class="modal-body"> 
         <!-- tab start--> 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -56,11 +53,8 @@
                         <div class="form-group">  
                           <input type="text" name="phonenumber" class="form-control" placeholder="User Phone Number" required />
                         </div>
-                        <div class="form-group gender-group"> 
-                          <!-- <input type="radio" id="ma" name="gender" value="male"/> <label for="ma">Male</label>
-                          <input type="radio" id="fa" name="gender" value="female"/> <label for="fa" >Female</label> -->
-                        <label    id="gender">Gender : </label>
-                        <!-- <span>Gender : </label> --> 
+                        <div class="form-group gender-group">  
+                        <label    id="gender">Gender : </label> 
                           <div class="custom-control-inline custom-radio gender-male">
                             <input type="radio" id="m" name="gender" value="female" class="custom-control-input">
                             <label class="custom-control-label" for="m">Male</label>
