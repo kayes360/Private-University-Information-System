@@ -7,7 +7,7 @@
 		header('location:login.php');
 	}
 	$email = $_SESSION['email'];
-//	$id = $_SESSION['ID']  ;
+	//$id = $_SESSION['ID']  ;
 	$sql= "SELECT Name
 		   FROM registration 
 		   WHERE Email= '$email' 

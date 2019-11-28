@@ -26,7 +26,7 @@
 		}else{
 			echo "<script>
 				alert('Please verify your email address. A verification link has been sent to $email !');
-				window.location.href='login.php';
+				window.location.href='/project/landing-page/landing_page.php'; 
 				</script>";
 		}
 		$_SESSION['email'] = $email;
@@ -36,7 +36,7 @@
 	else{
 		echo "<script>
 				alert('Please enter correct User Email and Password!');
-				window.location.href='login.php';
+				window.location.href='/project/landing-page/landing_page.php'; 
 				</script>";
 		/*header('location:login.php');*/
 		

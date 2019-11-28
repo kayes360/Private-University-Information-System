@@ -17,6 +17,8 @@ if(isset($_POST['submit'])){
 	var_dump($code);
 	
 	if ($g->checkCode($secret, $code, $allowedTime)) {
+	
+	//header('location:/project/landing-page/landing_page.php');
 		header('location:home.php');
 	} else {
 		echo "Not verified \n";

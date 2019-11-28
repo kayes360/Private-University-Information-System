@@ -10,8 +10,9 @@
     
 
 	<link rel="shortcut icon" type="image/png" href="../media\favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="../fontawesome-free-5.2.0-web/css/all.min.css" media="all" />
-	
+	<link rel="stylesheet" type="text/css" href="../fontawesome-free-5.2.0-web/all.min.css" media="all" />
+	<script src="https://kit.fontawesome.com/3662edb615.js" crossorigin="anonymous"></script>
+	  
 	<link rel="stylesheet" type="text/css" href="bdIcon.css" media="all" /> 
 
 	<script src="https://kit.fontawesome.com/6dc803f8de.js" crossorigin="anonymous"></script>
@@ -29,12 +30,12 @@
 
 </head>
 <body>
-	
+	<?php session_start(); ?>
  <?php include('../toheader/toheader.php') ?>  
 	<div class="full-body"> 
 	<section class="sec_1">
 		<div class="main_bg">
-			<form method="POST" action="">
+			<form method="POST" action="../result-page/results-page.php">
 
 				<div class="row">
 					<div class="form-group col-md-3">

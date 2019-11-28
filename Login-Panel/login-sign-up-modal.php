@@ -22,8 +22,8 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
                 <div class="login-form">
-                    <form action="validation.php" method="post">
-                      
+                    <form action="/project/Login-Panel/validation.php" method="post">
+                    
                         <div class="form-group">  
                           <input type="text" name="email" class="form-control input-sm" placeholder="User Email" required />
                         </div>

@@ -30,24 +30,51 @@
 			</div>
 			<div class="nav_bar">
 				<ul>
-					<li><a href="../landing-page/landing_page.php" title="Home">Home</a></li>
+					<li><a href="/project/landing-page/landing_page.php" title="Home">Home</a></li> 
 					<li><a href="#social-media" title="Social Media"> Social Media</a></li>
-					<li><a href="../contact-us-page/contact-us.php"title="Contact Us">Contact Us</a></li>
-					<li><a href="../about/about.php"title="Why Us ?">Why Us ?</a></li>
+					<li><a href="/project/contact-us-page/contact-us.php"title="Contact Us">Contact Us</a></li>
+					<li><a href="/project/about/about.php"title="Why Us ?">Why Us ?</a></li>
 				</ul>
 			</div>
 			<div class="profile">
 				<div class="profile-content">
-					 
-					<a   href="#theModal" id='session_text'  data-remote="/project/Login-Panel/login-sign-up-modal.php" data-toggle="modal" data-target="#theModal">Login/Sign Up</a>
-					<div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> 
-						<div class="modal-dialog modal-dialog-centered modal-lg" role="document"> 
-							<div class="modal-content">
-								<div class="modal-body"> 
-								</div>
-							</div>
-						</div>
-					</div>
+					<?php  
+						//include("localhost/project/connection/connection.php");
+						//session_start();
+						$id = $_SESSION['id'];  
+						if(isset( $_SESSION['id'])){
+								$sql= "SELECT Name
+										FROM registration 
+										WHERE ID = '$id' ;   
+										";
+								$result = $mysqli->query($sql);
+								$fields = $result->fetch_assoc();
+							echo	"<div class=\"dropdown\"> ";
+							echo		"<a class=\"login-dropdown btn btn-primary\" data-toggle=\"dropdown\">";
+							echo			"<i class=\"fas fa-user\"></i> ".$fields['Name'];
+							echo		"</a>";
+							echo		"<div class=\"dropdown-menu\">";
+							echo		"	<a class=\"dropdown-item\" href=\" #\">My Account</a>";
+							echo			"<a class=\"dropdown-item\" href=\" /project/Login-Panel/logout.php \">Logout</a>";
+							echo		"</div>";
+							echo 	"</div>";
+						}else{
+							echo "<a  class=\"before-login\"  href=\"#theModal\" id=\'session_text\'  data-remote=\"/project/Login-Panel/login-sign-up-modal.php\" data-toggle=\"modal\" data-target=\"#theModal\">Login/Sign Up</a>";
+							echo	"<div class=\"modal fade\" id=\"theModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalCenterTitle\" aria-hidden=\"true\"> ";
+							echo		"<div class=\"modal-dialog modal-dialog-centered modal-lg\" role=\"document\">" ;
+							echo		"<div class=\"modal-content\">";
+							echo				"<div class=\"modal-body\">" ;
+							echo				"</div>";
+							echo		"</div>";
+							echo	"</div>";
+							echo	"</div>"; 
+						}
+					?>
+					
+
+					<!-- after login -->
+						
+					<!-- after login -->
 				</div>
 			</div>
 		</div>

@@ -55,7 +55,7 @@
 		if($set){
 				echo "<script>
 				alert('Your Email address has been verified.You may login. Thank You');
-				window.location.href='login.php';
+				window.location.href='/project/landing-page/landing_page.php'; 
 				</script>";
 			}else{
 				echo 'error';
