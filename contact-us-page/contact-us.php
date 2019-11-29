@@ -20,7 +20,9 @@
 
 
 <body> 
-			<?php include('../toheader/toheader.php') ?>
+			<?php 
+						include("../connection/connection.php"); 
+						include('../toheader/toheader.php') ?>
 	<div class="container">  
 		<div class="row align-items-center" id="profile_card">
 			<div class="col   "> 

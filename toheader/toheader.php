@@ -39,10 +39,11 @@
 			<div class="profile">
 				<div class="profile-content">
 					<?php  
-						//include("localhost/project/connection/connection.php");
+						include("connection.php");
 						//session_start();
-						$id = $_SESSION['id'];  
+						//$id = $_SESSION['id'];  
 						if(isset( $_SESSION['id'])){
+						$id =$_SESSION['id'];
 								$sql= "SELECT Name
 										FROM registration 
 										WHERE ID = '$id' ;   
@@ -54,7 +55,7 @@
 							echo			"<i class=\"fas fa-user\"></i> ".$fields['Name'];
 							echo		"</a>";
 							echo		"<div class=\"dropdown-menu\">";
-							echo		"	<a class=\"dropdown-item\" href=\" #\">My Account</a>";
+							echo		"	<a class=\"dropdown-item\" href=\" /project/Login-Panel/profile/profile.php \">My Account</a>";
 							echo			"<a class=\"dropdown-item\" href=\" /project/Login-Panel/logout.php \">Logout</a>";
 							echo		"</div>";
 							echo 	"</div>";

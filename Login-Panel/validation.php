@@ -19,6 +19,7 @@
 		$result = $mysqli->query($sql);
 		$fields = $result->fetch_assoc();
 		
+		$_SESSION['id'] = $fields['ID'] ;
 		if($fields['verified']=='Yes'){
 		header('location:google-auth.php');
 		//header('location:home.php');
@@ -30,6 +31,11 @@
 				</script>";
 		}
 		$_SESSION['email'] = $email;
+		$_SESSION['password'] = $password; 
+		$_SESSION['ID'] = $fields['ID'];
+		$_SESSION['password'] = $password;
+		$_SESSION['password'] = $password;
+		$_SESSION['password'] = $password;
 		$_SESSION['password'] = $password;
 		//header('location:home.php');
 	}
