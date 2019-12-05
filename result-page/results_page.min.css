@@ -1,0 +1,198 @@
+
+/*-----------------------
+STYLE FOR CARDS
+----------------------*/
+.container#card_section{
+	margin:0px 0px 0px 300px;
+	width:78%;
+	
+}
+
+.card {
+	height:500px;
+	width:30%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 4px solid #42d6a7;
+    border-radius: .25rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  transition: box-shadow 0.5s ease-in-out;
+  margin: 20px 10px 20px 10px;
+  float:left;
+	transition: .5s ease-in-out;
+	cursor:pointer;
+}
+
+.card:hover{
+	border:4px solid #56d642;
+	transition: .5s ease-in-out;
+	
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	transform:scale(1.1,1.1);
+}
+
+.university_name{
+	margin:0px 0px 0px 0px;
+	padding:10px 0px 0px 50px;
+	background-color:#e5e8e6;
+	height:17%;
+	
+	transition: .5s ease-in-out;
+	font-family: 'Dosis', sans-serif;
+	font-weight:800;
+}
+.university_name:hover{
+background-color:#1eb571;
+color:#fff;
+	transition: .5s ease-in-out;
+}
+	
+ .location,
+ .degree,
+ .subject,
+ .totalcost,
+ .semistertime,
+ .totaltime,
+ .campustype,
+ .admissiontest,
+ .ieb,
+ .contact {
+padding:5px 0px 5px 0px;
+transition:.5s;
+font-family:'Roboto';
+}
+ .location:hover,
+ .degree:hover,
+ .subject:hover,
+ .totalcost:hover,
+ .semistertime:hover,
+ .totaltime:hover,
+ .campustype:hover,
+ .admissiontest:hover,
+ .ieb:hover,
+ .contact:hover {
+transform:scale(1.2,1.2);
+transition:.5s;
+font-weight:bold;
+color:#714adb;
+
+
+}
+ .location:hover i,
+ .degree:hover i,
+ .subject:hover i,
+ .totalcost:hover i,
+ .semistertime:hover i,
+ .totaltime:hover i,
+ .campustype:hover i,
+ .admissiontest:hover i,
+ .ieb:hover i,
+ .contact:hover i{
+color:#cc2059;
+
+
+}
+
+.container#card_container{
+	margin:0;
+	padding:0px 0px 0px 20px;
+}
+span{
+margin:10px;
+padding:10px;
+}
+
+/*-----------------------
+STYLE FOR CARDS ENDS
+----------------------*/
+/*-----------------------
+STYLE FOR LEFT FORM
+----------------------*/
+
+.left_form{
+	
+	width :20%;
+	height:400px;
+	float: left;
+	
+}
+form.sideform{
+	margin: 20px 0px 0px 20px;
+}
+form.sideform,label,select,input{
+	cursor:pointer;
+}
+fieldset#form_fieldset{
+	width :100%;
+	height:600px;
+	background: white;
+	margin: 20px 0px 0px 20px;
+	}
+	
+form.sideform label,p,span{
+	color:black;
+	
+	font-weight: bold;
+	font-size:18px;
+	line-height:1;
+	letter-spacing:;
+	margin: 10px 0px 10px 0px;
+	
+}
+.mainSection label,p{
+	font-size:18px;
+	font-family: Courier New;
+	font-weight:bold;
+}
+select{
+	padding: 5px 5px 5px 5px ;
+	border: 1px solid #56d642;
+	border-radius:5px;
+	width: 200px;
+	height: 30px;
+	margin-left: 0px;
+}
+input#form_submit{
+	background: linear-gradient(135deg, #6e8efb, #a777e3);
+	color:white;
+	font-weight:700;
+	line-height:1px;
+	font-size:20px;
+	padding: 5px 5px 5px 5px ;
+	border: 1px solid #56d642;
+	border-radius:5px;
+	width: 200px;
+	height: 40px;
+	margin-left: 0px;
+	margin:20px 0px 0px 0px;
+}
+input#form_submit:hover{
+	background-color:#94b1e0;
+	transition-duration:2s;
+	padding: 5px 5px 5px 5px ;
+	border: 1px solid #56d642;
+	border-radius:5px;
+	width: 200px;
+	height: 40px;
+	margin-left: 0px;
+}
+input#fee_range{
+	
+	width: 190px;
+	padding: 5px 5px 5px 5px ;
+	border: 1px solid #56d642;
+	border-radius:5px;
+	height: 30px;
+	margin-left: 0px;
+}
+option[value=""][disabled] {
+  display: none;
+}
+

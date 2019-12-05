@@ -1,0 +1,38 @@
+/* Post at: https://superdevresources.com/3d-css-button/ */
+body {
+    text-align: center;
+    color:#000;
+    background-color: #ffffff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 20px;
+  }
+  
+  .button-3d {
+    position:relative;
+    width: auto;
+    display:inline-block;
+    color:#ecf0f1;
+    text-decoration:none;
+    border-radius:5px;
+    border:solid 1px #4267b2;
+    background:#4267b2;
+    text-align:center;
+    padding:16px 18px 14px;
+    margin: 12px;
+    
+    -webkit-transition: all 0.1s;
+      -moz-transition: all 0.1s;
+      transition: all 0.1s;
+      
+    -webkit-box-shadow: 0px 6px 0px #000;
+    -moz-box-shadow: 0px 6px 0px #000;
+    box-shadow: 0px 6px 0px black;
+  }
+  
+  .button-3d:active{
+      -webkit-box-shadow: 0px 2px 0px #000;
+      -moz-box-shadow: 0px 2px 0px #000;
+      box-shadow: 0px 2px 0px black;
+      position:relative;
+      top:4px;
+  }
