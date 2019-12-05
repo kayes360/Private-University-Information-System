@@ -1,5 +1,7 @@
 <?php
-
+	session_start();
+?>
+<?php 
 include_once("connection.php");
 $result='';
 $sql='';
@@ -9,8 +11,6 @@ $sql='';
 	$campus_type = isset($_POST['campus_type'] ) ? $_POST['campus_type'] : '';
 	$ieb = isset($_POST['ieb'] ) ? $_POST['ieb'] : '';
 	$total_cost = isset($_POST['total_cost'] ) ? $_POST['total_cost'] : '';
-	
-	
 if(!empty($_POST['submit1'])) {
 	// $location = isset($_POST['location']) ? $_POST['location'] : '';
 	// $degree = isset($_POST['degree']) ? $_POST['degree'] :'';
@@ -18,10 +18,7 @@ if(!empty($_POST['submit1'])) {
 	// $campus_type = isset($_POST['campus_type'] ) ? $_POST['campus_type'] : '';
 	// $ieb = isset($_POST['ieb'] ) ? $_POST['ieb'] : '';
 	// $total_cost = isset($_POST['total_cost'] ) ? $_POST['total_cost'] : '';
-
-	// switch($_POST['submit']){
-		// case 'submit_1':
-
+ 
 			if(!empty($location) && !empty($degree) && !empty($subject) ){
 				$sql = "
 					SELECT 
@@ -49,11 +46,9 @@ if(!empty($_POST['submit1'])) {
 				$result= mysqli_query($conn,$sql);
 			}
 			
-	}
-			// break;
+	} 
 
-if(!empty($_POST['submit2'])) {
-		// case 'submit_2':
+if(!empty($_POST['submit2'])) { 
 			if(
 				empty ($location) &&
 				empty ($degree) &&
@@ -120,9 +115,7 @@ if(!empty($_POST['submit2'])) {
 			";
 		
 			$result= mysqli_query($conn,$sql);
-			
-			// break;	
-	// }
+		 
 
 }
 
@@ -141,30 +134,24 @@ if(!empty($_POST['submit2'])) {
 	
 	<link rel="shortcut icon" type="image/png" href="../media\favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="../fontawesome-free-5.2.0-web/all.min.css" media="all" />
-	<script src="https://kit.fontawesome.com/3662edb615.js" crossorigin="anonymous"></script>
-	  <link rel="stylesheet" type="text/css" href="bootstrap_results_page.min.css" media="all" />
+	<script src="https://kit.fontawesome.com/3662edb615.js" crossorigin="anonymous"></script> 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
 	<link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
+
 	<script type="text/javascript" src="jquery-2.2.4.min.js"> </script>
+
+	<link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.css" media="all" /> 
+	<!-- Link for Header CSS -->
+	<link rel="stylesheet" type="text/css" href="/project/toheader/toheader.css" media="all" />  
+	<!-- Link for Footer CSS -->
+	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" />
+	<!-- Custom CSS For This page -->
+	<link rel="stylesheet" type="text/css" href="results_page.min.css" media="all" />
 </head>
 
 <body >
-	<header> 
-		<div class="logo_Name">
-			<a href="#">
-			<img src="../media/logo_img2.png" alt="" id="logo_img"/>
-		
-			</a>
-		</div>
-		<div class="nav_bar">
-			<ul>
-				<li><a href="../landing-page/landing_page.php" title="Home">Home</a></li>
-				<li><a href="#social-media" title="Social Media"> Social Media</a></li>
-				<li><a href="../contact-us-page/contact-us.php"title="Contact Us">Contact Us</a></li>
-				<li><a href="../about/about.php"title="Why Us ?">Why Us ?</a></li>
-			</ul>
-		</div>
-	</header>
+	
+<?php include('../toheader/toheader.php') ?>  
 
 		<div class="coitainer" id="left_form_container"> 
 			
@@ -262,13 +249,7 @@ if(!empty($_POST['submit2'])) {
   
   
    <div class="university_name"> 
-   <!-- <img class="card-img-top" src="nsu logo.png" alt="Card image cap" style="height:80px; -->
-																							  <!-- width:80px;  -->
-																							  <!-- align:center; -->
-																							  <!-- display: block; -->
-																								<!-- margin-left: auto; -->
-																								<!-- margin-right: auto; -->
-																		  <!-- " > -->
+   
     <h5 class="card-title"> 
 	<?php echo $row->University_Name ?> (<?php echo $row->University_Initial ?>)
 	</h5>
@@ -324,54 +305,8 @@ if(!empty($_POST['submit2'])) {
 		</div>
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="back-to-top hide" href="#">
-	<i class="fa fa-angle-double-up" aria-hidden="true"></i>
-		</div>
-	</div>
-	<!-- on scroll counter script  -->
-	
-	<script> 
-		jQuery(document).ready(function(){
-		 $(".counter").counterUp({
-		   delay: 10,
-		   time: 1000
-		});
-		});
-		
-		
-	</script>
-	
-	<script>
-// When the user clicks on the button, scroll to the top of the document
-
-$(document).on('click','.back-to-top',function(){
-	$('html,body').animate({scrollTop:0},500);
-	return false;
-
- });
-
-// Hide scroll button on top
-	$(document).scroll(function(e){
-		var scrollPos = $(this).scrollTop();
-		if(scrollPos < 100){
-			$('.back-to-top').addClass('hide');
-		}else{
-		
-		$('.back-to-top').removeClass('hide');
-		}
-	});
-
-</script>
+	 
+ 
 	
 </body>
 </html>

@@ -11,6 +11,7 @@ $allowedTime= 30;
 // $code = '846474'; 
 $g = new \Sonata\GoogleAuthenticator\GoogleAuthenticator();
 echo $g->getCode($secret);
+
 if(isset($_POST['submit'])){
 	$code=$_POST['auth-code']; 
 	echo '<br>';

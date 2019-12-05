@@ -21,9 +21,10 @@
 
 <body> 
 			<?php 
+			 			 session_start();
 						include("../connection/connection.php"); 
 						include('../toheader/toheader.php') ?>
-	<div class="container">  
+						<div class="container">  
 		<div class="row align-items-center" id="profile_card">
 			<div class="col   "> 
 				<div class="our-team">

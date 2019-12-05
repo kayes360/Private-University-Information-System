@@ -1,11 +1,12 @@
-
-
+<?php
+	session_start();
+?>
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
 	<title>Private Universitiy Finder</title>
-	 <link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.min.css" media="all" />  
+	 <link rel="stylesheet" type="text/css" href=" " media="all" />  
 	 <link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.css" media="all" /> 
     
 
@@ -15,22 +16,20 @@
 	  
 	<link rel="stylesheet" type="text/css" href="bdIcon.css" media="all" /> 
 
-	<script src="https://kit.fontawesome.com/6dc803f8de.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="jquery/jquery-2.2.4.min.js"> </script>
-	<script type="text/javascript" src="jquery/jquery.waypoints.min.js"> </script>
-	<script type="text/javascript" src="jquery/jquery.waypoints.min.js"> </script>
-	<script type="text/javascript" src="jquery/jquery.counterup.min.js"> </script>
-
-
-	<link rel="stylesheet" type="text/css" href="landing_page.css" media="all" />  
+ 
+	<!-- Link for Counter Effect -->
+	<script src="jquery/jquery.min-1.10.2.js"></script>
+    <script src="jquery/waypoint-2.0.3.js"></script>
+    <script src="jquery/jquery.counterup.min.js"></script> 
     <!-- Link for Header CSS -->
 	 <link rel="stylesheet" type="text/css" href="/project/toheader/toheader.css" media="all" />  
 	<!-- Link for Footer CSS -->
-	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" />
+	<!-- Custom CSS For This page -->
+	<link rel="stylesheet" type="text/css" href="landing_page.css" media="all" /> 
 
 </head>
 <body>
-	<?php session_start(); ?>
  <?php include('../toheader/toheader.php') ?>  
 	<div class="full-body"> 
 	<section class="sec_1">
@@ -160,8 +159,8 @@
 		});
 
 
-	</script>
-
+	</script> 
+	
 	<script>
 // When the user clicks on the button, scroll to the top of the document
 

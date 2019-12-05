@@ -32,12 +32,12 @@
 	<link rel="stylesheet" type="text/css" href="/project/toheader/header.css" media="all" />
 	<!-- Link for Footer CSS -->
 	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" /> 
+	<link rel="stylesheet" href="profile.css">
 </head>
 <body>
 	
 <?php include('../../toheader/toheader.php'); ?>
-<div class="container"> 
-<div class="cont "> 
+<div class="container-flow">  
 	<div class="main-body "> 	
 		<h1>My Unique ID = <?php echo  $_SESSION['ID'] ; ?> </h1>  
 		<h1>Name = <?php echo  $_SESSION['Name'] ; ?> </h1> 
@@ -46,16 +46,13 @@
 		<h1>Age = <?php echo  $_SESSION['Age'] ; ?> </h1> 
 		<h1>Phone = <?php echo  $_SESSION['Phone_Number'] ; ?> </h1> 
 		<h1>Address = <?php echo  $_SESSION['Address'] ; ?> </h1> 
-		<h1>Profile Verriefied = <?php echo  $_SESSION['verified'] ; ?> </h1> 
-		
-	</div> 
-
-</div>
+		<h1>Profile Verriefied = <?php echo  $_SESSION['verified'] ; ?> </h1>  
+	</div>  
 </div>
 <?php include('../../tofooter/tofooter.php'); ?>
 <script> 
-    var x = document.getElementById('session_text').innerHTML = "<?php echo  $fields['Name'] ; ?> "; 
-    document.getElementById("session_text").href="profile.php"; 
+    // var x = document.getElementById('session_text').innerHTML = "<?php echo  $fields['Name'] ; ?> "; 
+    // document.getElementById("session_text").href="profile.php"; 
 </script>
 </body>
 </html>

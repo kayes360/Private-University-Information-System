@@ -1,4 +1,16 @@
+ <?php 
+ session_start();
+ require_once('../Login-Panel/login-with-facebook/config.php'); 
+ 
+if(isset($_SESSION['access_token'])){
+    header('Location:/project/landing-page/landing_page.php');
+    exit();
+} 
 
+ $redirect_url = "https://localhost/login-with-facebook/fb-calback.php"  ;
+ $permissions = ['email'];
+ $login_url = $helper->getLoginUrl($redirect_url,$permissions);  
+?>
 
 <!-- Modal -->
  
@@ -25,10 +37,10 @@
                     <form action="/project/Login-Panel/validation.php" method="post">
                     
                         <div class="form-group">  
-                          <input type="text" name="email" class="form-control input-sm" placeholder="User Email" required />
+                          <input type="text" name="email" class="form-control input-sm" placeholder="User Email"  />
                         </div>
                         <div class="form-group">  
-                          <input type="password" name="password" class="form-control input-sm" placeholder="User Password" required />
+                          <input type="password" name="password" class="form-control input-sm" placeholder="User Password"  />
                         </div>
                         
                         <div class="form-group">
@@ -36,7 +48,10 @@
                         </div>
                         
                         <div class="form-group">
-                          <button type="submit" class="btn btn-primary"> Login With Facebook</button>
+						<a href="<?php echo $login_url; ?>" class="btn btn-primary">
+                          Login With Facebook 
+						  </a>
+						  <p><?php echo $login_url; ?></p>
                         </div>
                       </form>
                 </div>

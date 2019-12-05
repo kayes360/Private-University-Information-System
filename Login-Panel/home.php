@@ -3,9 +3,11 @@
 	// $con = mysqli_connect('localhost','root',''); 
 	//$mysqli = NEW MySQLi('localhost','root','','all_private_university');	
 	include('../connection/connection.php')	;
+	
 	if(!isset($_SESSION['email'])){
 		header('location:login.php');
 	}
+
 	$email = $_SESSION['email'];
 	//$id = $_SESSION['ID']  ;
 	$sql= "SELECT Name
@@ -43,8 +45,9 @@
 		<h1>Welcome <?php echo  $fields_id['ID'] ; ?> </h1>
 	</div>
 	 <button type="button" class="btn btn-secondary"> 
-		<a href="profile/profile.php">Profile</a>
+		<a href="/project/Login-Panel/profile/profile.php ">Profile</a>
 	 </button>
+		<a href="/project/Login-Panel/profile/profile.php ">Profile</a>
 
 </div>
 </div>

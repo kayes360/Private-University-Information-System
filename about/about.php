@@ -15,7 +15,11 @@
 	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" />  
 
 <body>
-	<?php include('../toheader/toheader.php')?>
+	<?php  
+	session_start();
+	include("../connection/connection.php"); 
+	include('../toheader/toheader.php')
+	?>
 	<section> 
 	
 		<div class="description"> 

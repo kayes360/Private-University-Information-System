@@ -20,16 +20,17 @@
 		$fields = $result->fetch_assoc();
 		
 		$_SESSION['id'] = $fields['ID'] ;
+
 		if($fields['verified']=='Yes'){
-		header('location:google-auth.php');
-		//header('location:home.php');
-		
+			header('location:google-auth.php');
+			//header('location:home.php');	
 		}else{
 			echo "<script>
 				alert('Please verify your email address. A verification link has been sent to $email !');
 				window.location.href='/project/landing-page/landing_page.php'; 
 				</script>";
 		}
+		
 		$_SESSION['email'] = $email;
 		$_SESSION['password'] = $password; 
 		$_SESSION['ID'] = $fields['ID'];

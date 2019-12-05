@@ -1,0 +1,15 @@
+.container-flow{
+    width: 100%; 
+    background: rgb(111,111,111);
+    background: radial-gradient(circle, rgba(111,111,111,1) 0%, rgba(91,91,91,1) 100%); 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+.main-body {
+    margin-left: 5%; 
+}
+.main-body>h1:hover{ 
+    cursor: text;
+}
