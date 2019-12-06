@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<title>Private Universitiy Finder</title>
 	 <link rel="stylesheet" type="text/css" href=" " media="all" />  
-	 <link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.css" media="all" /> 
+	 <link rel="stylesheet" type="text/css" href="/project/bootstrap/booststrap.css" media="all" /> 
     
 
 	<link rel="shortcut icon" type="image/png" href="../media\favicon.png"/>
@@ -26,7 +26,7 @@
 	<!-- Link for Footer CSS -->
 	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" />
 	<!-- Custom CSS For This page -->
-	<link rel="stylesheet" type="text/css" href="landing_page.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="landing_page.css" media="all" />  
 
 </head>
 <body>

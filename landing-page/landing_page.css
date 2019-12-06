@@ -1,3 +1,6 @@
+.modal-body { 
+    padding:0;
+}
 /* Section 1 Starts*/
 section.sec_1 .row{
 	margin: 150px 0px 0px 70px;

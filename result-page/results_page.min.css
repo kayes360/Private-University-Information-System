@@ -195,4 +195,9 @@ input#fee_range{
 option[value=""][disabled] {
   display: none;
 }
-
+#myAlert{
+	top:0; 
+	position:absolute;
+	background-color:red;
+	color: white;
+} 

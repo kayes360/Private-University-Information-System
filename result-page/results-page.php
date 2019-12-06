@@ -1,50 +1,52 @@
 <?php
-	session_start();
+	 session_start();
+?>
+<?php 
+	//check login for appication
+	// if(isset( $_SESSION['id'])){
+		$_SESSION['application_file_path'] ="/project/result-page/payment.php";
+	// }else {  
+	//  $_SESSION['application_file_path'] = "<script type='text/javascript'>alert('hix');</script>";
+	// }
 ?>
 <?php 
 include_once("connection.php");
-$result='';
+$_SESSION['result']='';
 $sql='';
-	$location = isset($_POST['location']) ? $_POST['location'] : '';
-	$degree = isset($_POST['degree']) ? $_POST['degree'] :'';
-	$subject =isset( $_POST['subject']) ?$_POST['subject'] :'';
-	$campus_type = isset($_POST['campus_type'] ) ? $_POST['campus_type'] : '';
-	$ieb = isset($_POST['ieb'] ) ? $_POST['ieb'] : '';
-	$total_cost = isset($_POST['total_cost'] ) ? $_POST['total_cost'] : '';
+	$_SESSION['location']= isset($_POST['location']) ? $_POST['location'] : '';
+	$_SESSION['degree'] = isset($_POST['degree']) ? $_POST['degree'] :'';
+	$_SESSION['subject'] =isset( $_POST['subject']) ?$_POST['subject'] :'';
+	$_SESSION['campus_type'] = isset($_POST['campus_type'] ) ? $_POST['campus_type'] : '';
+	$_SESSION['ieb'] = isset($_POST['ieb'] ) ? $_POST['ieb'] : '';
+	$_SESSION['total_cost'] = isset($_POST['total_cost'] ) ? $_POST['total_cost'] : '';
 if(!empty($_POST['submit1'])) {
-	// $location = isset($_POST['location']) ? $_POST['location'] : '';
-	// $degree = isset($_POST['degree']) ? $_POST['degree'] :'';
-	// $subject =isset( $_POST['subject']) ?$_POST['subject'] :'';
-	// $campus_type = isset($_POST['campus_type'] ) ? $_POST['campus_type'] : '';
-	// $ieb = isset($_POST['ieb'] ) ? $_POST['ieb'] : '';
-	// $total_cost = isset($_POST['total_cost'] ) ? $_POST['total_cost'] : '';
  
-			if(!empty($location) && !empty($degree) && !empty($subject) ){
-				$sql = "
-					SELECT 
-						u.University_Initial,
-						u.University_Name,
-						u.Location,
-						c.Degree,
-						c.subject,
-						c.Total_Cost,
-						c.semister_time,
-						c.Total_Time,
-						u.Campus_Type,
-						c.Admission_Test,
-						c.IEB_Accreditation,
-						u.Contact_No
-					FROM universities as u 
-						LEFT JOIN courses as c 
-							ON (c.University_Initial = u.University_Initial)
-					WHERE 
-						u.Location = '$location'
-					AND	c.Degree  = '$degree'
-					AND c.subject = '$subject';
-				";
-			
-				$result= mysqli_query($conn,$sql);
-			}
+	if(!empty($_SESSION['location']) && !empty($_SESSION['degree']) && !empty($_SESSION['subject']) ){
+		$sql = "
+			SELECT 
+				u.University_Initial,
+				u.University_Name,
+				u.Location,
+				c.Degree,
+				c.subject,
+				c.Total_Cost,
+				c.semister_time,
+				c.Total_Time,
+				u.Campus_Type,
+				c.Admission_Test,
+				c.IEB_Accreditation,
+				u.Contact_No
+			FROM universities as u 
+				LEFT JOIN courses as c 
+					ON (c.University_Initial = u.University_Initial)
+			WHERE 
+				u.Location = '{$_SESSION['location']}'
+			AND	c.Degree  = '{$_SESSION['degree']}'
+			AND c.subject = '{$_SESSION['subject']}';
+		";
+	
+		$_SESSION['result']= mysqli_query($conn,$sql); 
+	}
 			
 	} 
 
@@ -234,15 +236,13 @@ if(!empty($_POST['submit2'])) {
         </form> 
 		</fieldset>
 		</div>
-		</div>
-		
-		
-	
-
+		</div>  
 			<?php 
-			if ( $result ) {
+			if ( $_SESSION['result'] ) {
 
-				while($row = mysqli_fetch_object($result)) { ?>
+				while($row= mysqli_fetch_object($_SESSION['result'])) { 
+					$_SESSION['University_Name'] = $row->University_Name ; 
+					?>
 		<div class="container" id="card_section"> 
 			<div class="card">
 
@@ -286,7 +286,24 @@ if(!empty($_POST['submit2'])) {
 		</div>
 		<div class="contact"> 		<i class="fas fa-phone-square" style=" transform: rotate(90deg);"></i>		 					  <span> <?php echo $row->Contact_No ?></span>				
 		</div>
-	
+	<?php 
+		//check login for appication
+		if(isset( $_SESSION['id'])){?>
+		<?php 
+			'<a href=".$_SESSION[\'application_file_path\']." class=\"btn btn-primary\">Apply </a>';
+			echo "<a href=".$_SESSION['application_file_path'].">  Apply </a>";
+		}else {   
+		?>
+		<button id="btnSubmit" class="btn btn-primary"> Apply </button> 
+		<br /><br /> 
+		<div id="myAlert" class="alert alert-danger collapse">
+			<a id="linkClose" href="#" class="close">&times;</a>
+			<strong> Please Login To Apply </strong>
+		</div>  
+		<?php
+		}
+	?>
+		
 
 
 	<!-- </div> -->
@@ -309,4 +326,15 @@ if(!empty($_POST['submit2'])) {
  
 	
 </body>
+<script type="text/javascript">
+			$(document).ready(function () { 
+				$('#btnSubmit').click(function () {
+					$('#myAlert').show('fade');
+				}); 
+				$('#linkClose').click(function () {
+					$('#myAlert').hide('fade');
+				});
+
+			});
+		</script>
 </html>

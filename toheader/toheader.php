@@ -70,7 +70,7 @@
 							echo	'<div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> ';
 							echo		'<div class="modal-dialog modal-dialog-centered modal-lg" role="document">';
 							echo		'<div class="modal-content">';
-							echo				'<div class="modal-body">' ;
+							echo				'<div class="modal-body ">' ;
 							echo				'</div>';
 							echo		'</div>';
 							echo	'</div>';

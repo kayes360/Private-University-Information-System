@@ -17,8 +17,8 @@ i#cross-btn:hover{
 	 height: 600px; 
 }
 .modal-body {
-	padding:0;
-}
+ padding:0 !important;
+} 
 .nav-link {
 	background-color: #eaeaea;
 	font-size: 30px;
