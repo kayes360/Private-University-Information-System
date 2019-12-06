@@ -43,9 +43,9 @@
                     </div>
                     <div class="col-md-3" id="googles">
                         <li>
-                            <a href="https://www.plus.google.com">
-                                <i class="fab fa-google-plus-g"> </i><br />
-                                <span class="menu-text">Google+</span>
+                            <a href="https://github.com/kayes360/Private-University-Information-System">
+                            <i class="fab fa-github"></i><br />
+                                <span class="menu-text">Github</span>
                             </a>
                         </li>
                     </div>

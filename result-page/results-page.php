@@ -4,8 +4,8 @@
 <?php 
 	//check login for appication
 	// if(isset( $_SESSION['id'])){
-		$_SESSION['application_file_path'] ="/project/result-page/payment.php";
-	// }else {  
+		$_SESSION['application_file_path'] ="/project/Login-Panel/payment/payment.php";
+	// }else {   
 	//  $_SESSION['application_file_path'] = "<script type='text/javascript'>alert('hix');</script>";
 	// }
 ?>
@@ -242,6 +242,22 @@ if(!empty($_POST['submit2'])) {
 
 				while($row= mysqli_fetch_object($_SESSION['result'])) { 
 					$_SESSION['University_Name'] = $row->University_Name ; 
+					$_SESSION['Location'] = $row->Location ; 
+					$_SESSION['Degree'] = $row->Degree ; 
+					$_SESSION['subject'] = $row->subject ; 
+					$_SESSION['Total_Cost'] = $row->Total_Cost ; 
+					$_SESSION['semister_time'] = $row->semister_time ; 
+					$_SESSION['Total_Time'] = $row->Total_Time ; 
+					$_SESSION['Admission_Test'] = $row->Admission_Test ; 
+					$_SESSION['Campus_Type'] = $row->Campus_Type ; 
+					$_SESSION['IEB_Accreditation'] = $row->IEB_Accreditation ; 
+					$_SESSION['Contact_No'] = $row->Contact_No ;  
+
+					if($_SESSION['IEB_Accreditation'] =1){
+						$_SESSION['IEB_Accreditation'] ="Yes";
+					}else {
+						$_SESSION['IEB_Accreditation'] ="No";
+					}
 					?>
 		<div class="container" id="card_section"> 
 			<div class="card">
@@ -251,40 +267,40 @@ if(!empty($_POST['submit2'])) {
    <div class="university_name"> 
    
     <h5 class="card-title"> 
-	<?php echo $row->University_Name ?> (<?php echo $row->University_Initial ?>)
+	<?php echo $_SESSION['University_Name'] ?> 
 	</h5>
    </div>
    <div class="container" id="card_container"> 
    <div class="card-body">
     <!-- <div class="card-text"> -->
 		<div class="location"> 		<i class="fas fa-map-marked"></i> 	
-									<span> <?php echo $row->Location ?></span>
+									<span> <?php echo $_SESSION['Location'] ?></span>
 		</div>
 		<div class="degree">   		<i class="fas fa-user-graduate"></i>			
-									<span> <?php echo $row->Degree ?></span>
+									<span> <?php echo $_SESSION['Degree'] ?></span>
 		</div>
 		<div class="subject">   	<i class="fas fa-book-open"></i>				
-									<span><?php echo $row->subject ?></span>
+									<span><?php echo $_SESSION['subject'] ?></span>
 		</div>
 		<div class="totalcost"> 	<i class="fas fa-money-check-alt"></i> 				
-									<span> <?php echo $row->Total_Cost ?></span>
+									<span> <?php echo $_SESSION['Total_Cost'] ?></span>
 		</div>
 		<div class="semistertime"> 	<i class="fas fa-calendar-alt"></i> 	
-									<span><?php echo $row->semister_time ?></span>
+									<span><?php echo $_SESSION['semister_time'] ?></span>
 		</div>
 		<div class="totaltime"> 	<i class="fas fa-stopwatch"></i>			
-									<span> <?php echo $row->Total_Time ?></span>
+									<span> <?php echo $_SESSION['Total_Time'] ?></span>
 		</div>
 		<div class="admissiontest"> <i class="fas fa-pen-fancy"></i> 				
-									<span> <?php echo $row->Admission_Test ?></span>
+									<span> <?php echo $_SESSION['Admission_Test'] ?></span>
 		</div>
 		<div class="campustype"> 	<i class="fas fa-university"></i> 				
-									<span> <?php echo $row->Campus_Type ?></span>
+									<span> <?php echo $_SESSION['Campus_Type'] ?></span>
 		</div>
 		<div class="ieb"> 			<i class="fas fa-user-check"></i> 					
-									<span> <?php echo $row->IEB_Accreditation ?></span>
+									<span> <?php echo $_SESSION['IEB_Accreditation']?></span>
 		</div>
-		<div class="contact"> 		<i class="fas fa-phone-square" style=" transform: rotate(90deg);"></i>		 					  <span> <?php echo $row->Contact_No ?></span>				
+		<div class="contact"> 	<i class="fas fa-phone-square" style=" transform: rotate(90deg);"></i><span> <?php echo $_SESSION['Contact_No'] ?></span>				
 		</div>
 	<?php 
 		//check login for appication
@@ -302,10 +318,7 @@ if(!empty($_POST['submit2'])) {
 		</div>  
 		<?php
 		}
-	?>
-		
-
-
+	?>  
 	<!-- </div> -->
 	
 	
