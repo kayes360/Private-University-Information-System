@@ -1,12 +1,24 @@
+ 
+<!--Login with gmail -->
+<?php 
+    require_once "../Login-Panel/login-with-gmail/config.php";
+	if (isset($_SESSION['access_token'])) {
+		header('Location: index.php');
+		exit();
+	}
+	$loginURL = $gClient->createAuthUrl();
+	
+?>
+
+<!--Login with facebook -->
  <?php 
- session_start();
+ //session_start();
  require_once('../Login-Panel/login-with-facebook/config.php'); 
  
 if(isset($_SESSION['access_token'])){
     header('Location:/project/landing-page/landing_page.php');
     exit();
 } 
-
  $redirect_url = "https://localhost/login-with-facebook/fb-calback.php"  ;
  $permissions = ['email'];
  $login_url = $helper->getLoginUrl($redirect_url,$permissions);  
@@ -46,19 +58,33 @@ if(isset($_SESSION['access_token'])){
                         <div class="form-group">
                           <button type="submit" class="btn btn-primary"> Login</button> 
                         </div>
-                        
+                        <div class="form-group">
+                         <p id="alert" style = 'color:red ;display:none;  '> Please enter correct User Email and Password!</p> 
+                        </div>
+                        <!--Login with facebook -->
                         <div class="form-group">
 						<a href="<?php echo $login_url; ?>" class="btn btn-primary">
                           Login With Facebook 
 						  </a>
-						  <p><?php echo $login_url; ?></p>
+						  <p><?php //echo $login_url; ?></p>
                         </div>
+                        
+
+                        <!--Login with gmail -->
+                        <div class="form-group">
+						<a href="<?php echo $loginURL; ?>" class="btn btn-primary">
+                          Login With Gmail 
+						  </a>
+						  <p><?php //echo $login_url; ?></p>
+                        </div>
+                        
+                         
                       </form>
                 </div>
             </div>
             <div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="sign-up-tab">
                 <div class="register-form">
-                    <form action="registration.php" method="post" name="">
+                    <form action="/project/Login-Panel/registration.php" method="post" name="">
                         <div class="form-group">  
                           <input type="text" name="name" class="form-control" placeholder="User Name" required />
                         </div>
@@ -71,7 +97,7 @@ if(isset($_SESSION['access_token'])){
                         <div class="form-group gender-group">  
                         <label    id="gender">Gender : </label> 
                           <div class="custom-control-inline custom-radio gender-male">
-                            <input type="radio" id="m" name="gender" value="female" class="custom-control-input">
+                            <input type="radio" id="m" name="gender" value="male" class="custom-control-input">
                             <label class="custom-control-label" for="m">Male</label>
                           </div> 
                             <div class="custom-control custom-radio custom-control-inline gender-female">

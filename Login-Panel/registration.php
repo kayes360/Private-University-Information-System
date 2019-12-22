@@ -18,7 +18,7 @@
 	if($num == 1){
 		echo "<script>
 				alert('Email Already Exists!');
-				window.location.href='login.php';
+				window.location.href='/project/landing-page/landing_page.php ';
 				</script>";	
 	}
 	else{

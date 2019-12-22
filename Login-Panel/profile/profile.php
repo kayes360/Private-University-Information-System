@@ -26,7 +26,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Profile</title>
-	<link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.css" media="all" />
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/3662edb615.js" crossorigin="anonymous"></script> 
 	
 	<!-- Link for Header CSS -->
 	<link rel="stylesheet" type="text/css" href="/project/toheader/header.css" media="all" />

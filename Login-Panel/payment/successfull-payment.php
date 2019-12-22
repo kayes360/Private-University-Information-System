@@ -52,10 +52,10 @@
         $validated_on = $result->validated_on;
         $gw_version = $result->gw_version;
 
-        echo  $status.'<br>';
-        echo $tran_date.'<br>';
-        echo $tran_id.'<br>'; 
-        echo $card_type.'<br>';
+        echo 'Payment Status : '. $status.'<br>';
+        echo 'Transaction Data : '. $tran_date.'<br>';
+        echo 'Transaction Status : '. $tran_id.'<br>'; 
+        echo 'Card Type : '. $card_type.'<br>';
     
     } else {
     

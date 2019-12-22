@@ -42,12 +42,12 @@
 	<div class="main-body ">
 		<a class="float-right" href="Logout.php">Logout</a>		
 		<h1>Welcome <?php echo  $fields['Name'] ; ?> </h1>
-		<h1>Welcome <?php echo  $fields_id['ID'] ; ?> </h1>
+		<h1>  <?php //echo  $fields_id['ID'] ; ?> </h1>
 	</div>
 	 <button type="button" class="btn btn-secondary"> 
 		<a href="/project/Login-Panel/profile/profile.php ">Profile</a>
 	 </button>
-		<a href="/project/Login-Panel/profile/profile.php ">Profile</a>
+		<!--<a href="/project/Login-Panel/profile/profile.php ">Profile</a>-->
 
 </div>
 </div>

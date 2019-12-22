@@ -19,7 +19,7 @@
 		$result = $mysqli->query($sql);
 		$fields = $result->fetch_assoc();
 		
-		$_SESSION['id'] = $fields['ID'] ;
+		 $_SESSION['id'] = $fields['ID'] ;
 
 		if($fields['verified']=='Yes'){
 			header('location:google-auth.php');
@@ -44,10 +44,6 @@
 		echo "<script>
 				alert('Please enter correct User Email and Password!');
 				window.location.href='/project/landing-page/landing_page.php'; 
-				</script>";
-		/*header('location:login.php');*/
-		
- 
-
+				</script>"; 
 	}
-?>
+?> 

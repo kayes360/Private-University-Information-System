@@ -52,48 +52,48 @@ if(!empty($_POST['submit1'])) {
 
 if(!empty($_POST['submit2'])) { 
 			if(
-				empty ($location) &&
-				empty ($degree) &&
-				empty ($subject) &&
-				empty ($campus_type) &&
-				empty ($ieb) &&
-				empty($total_cost)
+				empty ($_SESSION['location']) &&
+				empty ($_SESSION['degree']) &&
+				empty ($_SESSION['subject']) &&
+				empty ($_SESSION['campus_type']) &&
+				empty ($_SESSION['ieb']) &&
+				empty($_SESSION['total_cost'])
 			) {
 				return false;
 			}
 
 			$where ="WHERE";
 			
-			if(!empty ($location) ){
-				$where .=" u.Location = '$location' ";
+			if(!empty ($_SESSION['location']) ){
+				$where .=" u.Location = '{$_SESSION['location']}' ";
 			}
 
-			if(!empty ($degree) ){
-				$where .= !empty ($location) ? 'AND' : '';
-				$where .=" c.Degree = '$degree' ";
+			if(!empty ($_SESSION['degree']) ){
+				$where .= !empty ($_SESSION['location']) ? 'AND' : '';
+				$where .=" c.Degree = '{$_SESSION['degree']}' ";
 
 			} 
 
-			if(!empty ($subject) ){
-				$where .= !empty ($location) || !empty($degree) ? 'AND' : '';
-				$where .=" c.subject = '$subject' ";
+			if(!empty ($_SESSION['subject']) ){
+				$where .= !empty ($_SESSION['location']) || !empty($_SESSION['degree']) ? 'AND' : '';
+				$where .=" c.subject = '{$_SESSION['subject']}' ";
 
 			}
 			
-			if(!empty ($campus_type) ){
-				$where .= !empty ($location) ||!empty($degree) ||!empty($subject)  ? 'AND' : '';
-				$where .= " u.Campus_Type = '$campus_type' ";
+			if(!empty ($_SESSION['campus_type']) ){
+				$where .= !empty ($_SESSION['location']) ||!empty($_SESSION['degree']) ||!empty($_SESSION['subject'])  ? 'AND' : '';
+				$where .= " u.Campus_Type = '{$_SESSION['campus_type']}' ";
 			}
 
-			if(!empty ($ieb) ){ 
-				$ieb_bool = 'yes' === $ieb ? 1 : 0;
-				$where .= !empty($location) || !empty($degree) || !empty($subject) || !empty($campus_type)  ? 'AND' : '';
-				$where .= " c.IEB_Accreditation = $ieb_bool ";
+			if(!empty ($_SESSION['ieb']) ){ 
+				$ieb_bool = 'yes' === $_SESSION['ieb'] ? 1 : 0;
+				$where .= !empty($_SESSION['location']) || !empty($_SESSION['degree']) || !empty($_SESSION['subject']) || !empty($_SESSION['campus_type'])  ? 'AND' : '';
+				$where .= " c.IEB_Accreditation = '{$_SESSION['ieb']}' ";
 			}
 
-			if(!empty ($total_cost) ){ 
-				$where .= !empty($location) || !empty($degree) || !empty($subject) || !empty($campus_type) || !empty ($ieb)  ? 'AND' : '';
-				$where .= " c.Total_Cost <= $total_cost ";
+			if(!empty ($_SESSION['total_cost']) ){  
+				$where .= !empty($_SESSION['location']) || !empty($_SESSION['degree']) || !empty($_SESSION['subject']) || !empty($_SESSION['campus_type'])|| !empty ($_SESSION['ieb'])  ? 'AND' : '';
+				$where .= " c.Total_Cost <= '{$_SESSION['total_cost']}' ";
 			}
 			
 			$sql = "
@@ -115,8 +115,7 @@ if(!empty($_POST['submit2'])) {
 						ON (c.University_Initial = u.University_Initial)
 				$where;
 			";
-		
-			$result= mysqli_query($conn,$sql);
+		 $_SESSION['result'] = mysqli_query($conn,$sql);
 		 
 
 }
