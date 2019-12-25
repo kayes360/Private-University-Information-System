@@ -2,11 +2,11 @@
  require_once('config.php'); 
  
 if(isset($_SESSION['access_token'])){
-    header('Location:../profile/profile.php');
+    header('Location: ../profile/profile.php');
     exit();
 } 
 
- $redirect_url = "https://localhost/login-with-facebook/fb-calback.php"  ;
+ $redirect_url = "https://localhost/project/Login-Panel/login-with-facebook/fb-calback.php"  ;
  $permissions = ['email'];
  $login_url = $helper->getLoginUrl($redirect_url,$permissions);  
 ?>
@@ -23,9 +23,8 @@ if(isset($_SESSION['access_token'])){
 </head>
 <style>
     i:"after{
-
         border-left: 6px solid green;
-  height: 500px;
+        height: 500px;
     }
 </style>
     <body>

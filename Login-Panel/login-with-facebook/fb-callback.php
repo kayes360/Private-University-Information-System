@@ -18,9 +18,9 @@
         echo "SDK Exception : ". $e->getMessage();
         exit();
     }
-
+    
     if(!$accessToken){
-        header('Location: login.php');
+        header('Location:/project/landing-page/landing_page.php');
         exit();
     }
 

@@ -19,7 +19,7 @@ if(isset($_SESSION['access_token'])){
     header('Location:/project/landing-page/landing_page.php');
     exit();
 } 
- $redirect_url = "https://localhost/login-with-facebook/fb-calback.php"  ;
+ $redirect_url = "../Login-Panel/login-with-facebook/fb-callback.php"  ;
  $permissions = ['email'];
  $login_url = $helper->getLoginUrl($redirect_url,$permissions);  
 ?>
@@ -64,7 +64,7 @@ if(isset($_SESSION['access_token'])){
                         <!--Login with facebook -->
                         <div class="form-group">
 						<a href="<?php echo $login_url; ?>" class="btn btn-primary">
-                          Login With Facebook 
+            <i class="fab fa-facebook-f"></i>  Login With Facebook 
 						  </a>
 						  <p><?php //echo $login_url; ?></p>
                         </div>
@@ -72,8 +72,8 @@ if(isset($_SESSION['access_token'])){
 
                         <!--Login with gmail -->
                         <div class="form-group">
-						<a href="<?php echo $loginURL; ?>" class="btn btn-primary">
-                          Login With Gmail 
+						<a href="<?php echo $loginURL; ?>" class="btn btn-danger">
+            <i class="fab fa-google-plus-g"></i> Login With Gmail 
 						  </a>
 						  <p><?php //echo $login_url; ?></p>
                         </div>

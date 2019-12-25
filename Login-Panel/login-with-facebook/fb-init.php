@@ -10,7 +10,7 @@
      'default_graph_version' => 'v5.0' 
  ]);
  $helper = $fb->getRedirectLoginHelper();
- $login_url = $helper->getLoginUrl('http://localhost/login-with-facebook/');
+ $login_url = $helper->getLoginUrl('http://localhost/project/Login-Panel/login-with-facebook/');
  $accessToken = $helper->getAccessToken(); 
  try {
      $accessToken = $helper->getAccessToken();
