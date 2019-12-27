@@ -46,7 +46,7 @@ final class GoogleAuthenticator implements GoogleAuthenticatorInterface
     /**
      * @var int
      */
-    private $periodSize = 30;
+    private $periodSize = 30;//time length for qr code validity
 
     /**
      * @param int                     $passCodeLength

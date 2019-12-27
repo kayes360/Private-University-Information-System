@@ -305,8 +305,8 @@ if(!empty($_POST['submit2'])) {
 		//check login for appication
 		if(isset( $_SESSION['id'])){?>
 		<?php 
-			'<a href=".$_SESSION[\'application_file_path\']." class=\"btn btn-primary\">Apply </a>';
-			echo "<a href=".$_SESSION['application_file_path'].">  Apply </a>";
+		//	'<a href=".$_SESSION[\'application_file_path\']." class=\"btn btn-primary\">Apply </a> ';
+			echo "<a href=".$_SESSION['application_file_path']." class='btn btn-primary'>  Apply </a>";
 		}else {   
 		?>
 		<button id="btnSubmit" class="btn btn-primary"> Apply </button> 

@@ -1,8 +1,35 @@
+<?php
+	session_start();
+	// $con = mysqli_connect('localhost','root',''); 
+	//$mysqli = NEW MySQLi('localhost','root','','all_private_university');	
+	include('../../connection/connection.php')	;
+	
+	if(!isset($_SESSION['email'])){
+		header('location:login.php');
+	}
 
+	$email = $_SESSION['email'];
+	//$id = $_SESSION['ID']  ;
+	$sql= "SELECT Name
+		   FROM registration 
+		   WHERE Email= '$email' 
+				";
+		$result = $mysqli->query($sql);
+		$fields = $result->fetch_assoc();
+	$sql_id =  "SELECT ID
+				FROM registration 
+				WHERE Email= '$email' 
+					";
+		$result_id = $mysqli->query($sql_id);
+		$fields_id = $result_id->fetch_assoc();
+		$_SESSION['id'] = $fields_id['ID'] ;
+		 
+					
+?>
 <?php  
 
  include("connection.php");
- session_start();
+ //session_start();
  $id =   $_SESSION['id'];  
  if(isset( $_SESSION['id'])){
         $sql= "SELECT *
@@ -29,9 +56,10 @@
 	<link rel="stylesheet" type="text/css" href="/project/bootstrap/bootstrap.css" media="all" />
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 	<script src="https://kit.fontawesome.com/3662edb615.js" crossorigin="anonymous"></script> 
+	<link rel="shortcut icon" type="image/png" href="../../media\favicon.png"/>
 	
 	<!-- Link for Header CSS -->
-	<link rel="stylesheet" type="text/css" href="/project/toheader/header.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="/project/toheader/toheader.css" media="all" />
 	<!-- Link for Footer CSS -->
 	<link rel="stylesheet" type="text/css" href="/project/tofooter/tofooter.css" media="all" /> 
 	<link rel="stylesheet" href="profile.css">

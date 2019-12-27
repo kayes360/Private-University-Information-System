@@ -34,6 +34,7 @@
 	<title>Homepage</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="home.css" media="all" />
+	<link rel="shortcut icon" type="image/png" href="../media\favicon.png"/>
 </head>
 <body>
 	
@@ -41,12 +42,15 @@
 <div class="cont "> 
 	<div class="main-body ">
 		<a class="float-right" href="Logout.php">Logout</a>		
+		<a class="welcome" href="/project/Login-Panel/profile/profile.php ">
+		
 		<h1>Welcome <?php echo  $fields['Name'] ; ?> </h1>
+		</a>
 		<h1>  <?php //echo  $fields_id['ID'] ; ?> </h1>
 	</div>
-	 <button type="button" class="btn btn-secondary"> 
+	 <!-- <button type="button" class="btn btn-secondary"> 
 		<a href="/project/Login-Panel/profile/profile.php ">Profile</a>
-	 </button>
+	 </button> -->
 		<!--<a href="/project/Login-Panel/profile/profile.php ">Profile</a>-->
 
 </div>

@@ -52,7 +52,8 @@ i#cross-btn:hover{
 label#gender{
 	margin-right: 10%;
 }
-.form-group button{
+ 
+.form-group .btn{
 	width:100%;
 }
 .form-control  {  

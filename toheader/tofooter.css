@@ -1,0 +1,115 @@
+/*---------------------------
+Footer CSS Starts
+-----------------------*/
+body{
+    margin:0px;
+    padding: 0px;
+}
+.footer {
+    background: rgb(227, 113, 113);
+    background: linear-gradient(25deg, rgba(227, 113, 113, 1) 11%, rgba(163, 132, 184, 1) 53%);
+    overflow: hidden;
+    height: 300px;
+}
+
+.footer .row {
+    margin: 7% 0px 1% 0px;
+}
+.footer .row .col-md-4 h2 {
+    margin: 35px 0px 0px 150px;
+}
+ul#social-media{
+    margin: 0px 0px 0px 300px;
+    padding: 0;
+}
+.col-md-3 {
+    list-style: none;
+    float: left;
+}
+.col-md-3 a {
+    text-decoration: none;
+}
+.col-md-3 li i {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background-color: black;
+    border-radius: 30%;
+    font-size: 30px;
+    transition: .5s;
+    color: darkorange;
+}
+.col-md-3 li span {
+    color: black;
+    text-align: center;
+    margin: 0px 10px 0px 15px;
+}
+.col-md-3 li i:hover {
+    font-size: 50px;
+    transition: .9s;
+    -webkit-text-stroke-width: 0px;
+    background: white;
+}
+.col-md-3#facebook li i:hover {
+    font-size: 50px;
+    color: #3E5C9A;
+}
+
+.col-md-3#twitter li i:hover {
+    font-size: 50px;
+    color: #007BB6;
+}
+
+.col-md-3#googles li i:hover {
+    font-size: 50px;
+    color: #DD4D42;
+}
+
+.col-md-3#linkdin li i:hover {
+    font-size: 50px;
+    color: #007BB6;
+}
+
+.col-md-3#facebook li span:hover {
+
+    font-weight: bold;
+    transition: .5s;
+    letter-spacing: 2px;
+    color: #3E5C9A;
+}
+
+.col-md-3#twitter li span:hover {
+
+    font-weight: bold;
+    transition: .5s;
+    letter-spacing: 2px;
+    color: #007BB6;
+}
+
+.col-md-3#googles li span:hover {
+
+    font-weight: bold;
+    transition: .5s;
+    letter-spacing: 2px;
+    color: #DD4D42;
+}
+
+.col-md-3#linkdin li span:hover {
+
+    font-weight: bold;
+    transition: .5s;
+    letter-spacing: 2px;
+    color: #007BB6;
+}
+
+.btm-cprt {
+    text-align: center;
+    margin: 3% 0px 0px 0px;
+
+}
+
+/*---------------------------
+Footer CSS Ends
+-----------------------*/

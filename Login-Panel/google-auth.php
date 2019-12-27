@@ -10,7 +10,7 @@ $secret 	= 'XVQ2UIGO75XRUKJO'; // User Password
 $allowedTime= 30; 
 // $code = '846474'; 
 $g = new \Sonata\GoogleAuthenticator\GoogleAuthenticator();
-echo $g->getCode($secret);
+echo $g->getCode($secret); //for bypassing the scanning in developemnet stage
 
 if(isset($_POST['submit'])){
 	$code=$_POST['auth-code']; 
@@ -20,7 +20,9 @@ if(isset($_POST['submit'])){
 	if ($g->checkCode($secret, $code, $allowedTime)) {
 	
 	//header('location:/project/landing-page/landing_page.php');
-		header('location:home.php');
+	header('location:/project/Login-Panel/profile/profile.php');
+		//header('location:home.php');
+		
 	} else {
 		echo "Not verified \n";
 	}

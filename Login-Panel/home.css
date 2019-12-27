@@ -4,7 +4,10 @@ body{
 	background-position:center;
 }
 a{
-	color:#fff !important;
+	color:#fff !important; 
+}
+a.welcome{
+	font-size:35px !important; 
 }
 h1{
 	color: #fff !important;
